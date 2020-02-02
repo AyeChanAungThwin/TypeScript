@@ -30,27 +30,39 @@ $ browser-sync start --server
 $ npm install -g @angular/cli
 $ ng new my-app
 ```
-   - Press `ng` and enter to check if it is installed.
+   - Type `$ ng` and enter in terminal to check if it is installed.
 
 ## Creating the project
-1. touch index.ts
-- Create index.ts file and add the following code.
+1. Create index.ts file
+- `$ touch index.ts` and add the following code.
 ```
 console.log('TypeScript is running!');
 ```
 
-2. touch index.html
-- Open index.html and link with `src="/index.js"`.
+2. Create index.html file
+- `touch index.html`and link with `src="/index.js"`.
    - (index.js will be produced after compiling `index.ts`.)
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>TypeScript</title>
+	<script src="./index.js" defer></script>
+</head>
+<body>
+	
+</body>
+</html>
+```
 
-3. npm init
-- It can be used to set up a new or existing npm package.
-   - (Press enter for all steps.)
+3. Setting up new npm package. 
+- `npm init` can be used to set up a new or existing npm package.
+   - Press enter for all steps.
 
-4. npm install --save-dev lite-server
-(open package.json and inside "scripts" add the followings.)
-"tsc":"tsc",
-"start":"lite-server"
+4. Installing Server
+- `npm install --save-dev lite-server`
+   - (open package.json and inside "scripts" add `"tsc":"tsc", "start":"lite-server"`.
 ```
 "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -59,11 +71,11 @@ console.log('TypeScript is running!');
 },
 ```
 
-5. tsc index.ts
-(This comples the ts file and produce index.js file.)
+5. Compiling TypeScript file
+- `tsc index.ts` compiles and produces index.js file.
 
-6. npm start
-- This will run index.html on lite-server with the specified path
+6. Start the Lite Server
+- `npm start` will run index.html on lite-server with the specified path
 
 7. Check Console
 - Right Click on browser and press `Inspect Element(Q)`
