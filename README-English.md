@@ -2,11 +2,12 @@
 ## Abstract
 > This is a typescript!
 > Typescript is very useful tool in front-end development for JavaEE Developers.
-> Typescript provides type safety and export javascript file.
+> It provides compile-time checking.
+> It gives type safety and export javascript file.
 > It converts Java-like codes into javascript codes.
 
-## Requirements
-###### Arch Linux ######
+## Requirements (npm, ng, vscode)
+###### Installing requirements in Arch Linux ######
 - Install nvm - Node Version Manager
 `$ yaourt -S nvm`
 - Load nvm
