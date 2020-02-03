@@ -38,12 +38,8 @@ $ browser-sync start --server
    - Type`$ cd /usr/share/nvm/` in terminal.
    - Type`sudo gedit init-nvm.sh` in terminal and select all text and copy.
    - Type `sudo gedit .bashrc` in terminal and paste them in the end of the text.
-- Install nodejs from the main repository
-`$ sudo pacman -S nodejs`
-   - then you install typescript compiler!
-```
-$ npm install -g typescript
-```
+- Install nodejs from the main repository using `$ sudo pacman -S nodejs`.
+- And then you install typescript compiler using `$ npm install -g typescript`.
 
 ## Creating the project
 1. Create index.ts file
@@ -76,6 +72,7 @@ console.log('TypeScript is running!');
 4. Installing Server
 - `npm install --save-dev lite-server`
    - (open package.json and inside "scripts" add `"tsc":"tsc", "start":"lite-server"`.
+   - Add it just like the following code...
 ```
 "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
