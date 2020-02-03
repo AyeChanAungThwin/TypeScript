@@ -12,8 +12,10 @@
 - JavaScript also suffers from bad type coercion, etc...
 
 ## Benefits of TypeScript
-- TypeScript compiles into JavaScript. You can run typescript everywhere; in the browser or in a node js.
-- Existing JavaScript code is already valid to TypeScript code. So, migrating to TypeScript is as simple as renaming your file.
+- TypeScript compiles into JavaScript. 
+   - You can run typescript everywhere; in the browser or in a node js.
+- Easy Migration
+   - Existing JavaScript code is already valid to TypeScript code. So, migrating to TypeScript is as simple as renaming your file.
 - Its syntax is pretty familiar to those of OOP languages.
 - TypeScript includes many improvements over JavaScript.
 
