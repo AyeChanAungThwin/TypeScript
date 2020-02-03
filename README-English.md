@@ -69,7 +69,7 @@ console.log('TypeScript is running!');
 - `npm init` can be used to set up a new or existing npm package.
    - Press enter for all steps.
 
-4. Installing Server
+4. Installing Development only dependency and Lite Server
 - `npm install --save-dev lite-server`
    - (open package.json and inside "scripts" add `"tsc":"tsc", "start":"lite-server"`.
    - Add it just like the following code...
