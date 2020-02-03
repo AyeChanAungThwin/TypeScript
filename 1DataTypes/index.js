@@ -13,22 +13,22 @@ any - *
 */
 //1. Number
 var num = 1;
-console.log("1. Number");
+console.log("--> 1. Number <--");
 console.log("Number is " + num + ".");
 console.log();
 //2. String
 var word = "Hello";
-console.log("2. String");
+console.log("--> 2. String <--");
 console.log("String is outputing " + word + ".");
 console.log();
 //3. Boolean
 var isRunning = true;
-console.log("3. Boolean");
+console.log("--> 3. Boolean <--");
 console.log("Boolean is currently " + isRunning + ".");
 console.log();
 //4. Array<T>
 var animals = ["Cat", "Dog", "Bird"];
-console.log("4. Array<T>");
+console.log("--> 4. Array<T> <--");
 console.log("Array<string> index of 0 has \"" + animals[0] + ".\"");
 for (var _i = 0, animals_1 = animals; _i < animals_1.length; _i++) {
     var animal = animals_1[_i];
@@ -40,17 +40,17 @@ var person = {
     name: "Aye Chan Aung Thwin",
     age: 30
 };
-console.log("5. Object");
+console.log("--> 5. Object <--");
 console.log("Name is \"" + person.name + "\"\" and age is " + person.age + ".");
 console.log();
 //6. Tuple
-console.log("6. Tuple");
+console.log("--> 6. Tuple <--");
 var role = [1, "Aye Chan Aung Thwin"];
 console.log("Tuple data [0] -> " + role[0] + ".");
 console.log("Tuple data [1] -> \"" + role[1] + ".\"");
 console.log();
 //7. Enum
-console.log("7. Enum (Human Readable Form)");
+console.log("--> 7. Enum (Human Readable Form) <--");
 //Enum Creation
 var Role;
 (function (Role) {
@@ -74,7 +74,7 @@ else {
 }
 console.log();
 //8. Any
-console.log("8. Any");
+console.log("--> 8. Any <--");
 var data;
 data = 1;
 console.log("Data Type is " + typeof (data) + " and value is " + data + ".");
@@ -88,7 +88,7 @@ data = [1, 2];
 console.log("Data Type is " + typeof (data) + " and value is " + data + ".");
 console.log();
 //9. Enum (Another Approach)
-console.log("9. Enum (Another Approach)");
+console.log("--> 9. Enum (Another Approach) <--");
 var ADMIN = 0;
 var MEMBER = 1;
 var human = ADMIN;
@@ -105,7 +105,7 @@ console.log();
 /*10. Tuple Array - It looks like MultiDimentional Array in Java
 but difference is that it is data type containing 2 fixed data types with fixed tuple length
 */
-console.log("10. Tuple with Array");
+console.log("--> 10. Tuple with Array <--");
 var roles = [[1, "HaHa"], [2, "HeHe"], [3, "HoHo"]];
 for (var i = 0; i < roles.length; i++) {
     for (var j = 0; j < roles[i].length; j++) { //Length of Turple is fixed. j<2
