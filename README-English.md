@@ -38,12 +38,10 @@ $ browser-sync start --server
    - Type `sudo gedit .bashrc` in terminal and paste them in the end of the text.
 - Install nodejs from the main repository
 `$ sudo pacman -S nodejs`
-   - then you create a folder for your project and in a terminal you can install Angular
+   - then you install typescript compiler!
 ```
-$ npm install -g @angular/cli
-$ ng new my-app
+$ npm install -g typescript
 ```
-   - Type `$ ng` and enter in terminal to check if it is installed.
 
 ## Creating the project
 1. Create index.ts file
