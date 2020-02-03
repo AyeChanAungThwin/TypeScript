@@ -29,7 +29,7 @@ console.log();
 //4. Array<T>
 var animals = ["Cat", "Dog", "Bird"];
 console.log("4. Array<T>");
-console.log("Array index of 0 has \"" + animals[0] + ".\"");
+console.log("Array<string> index of 0 has \"" + animals[0] + ".\"");
 for (var _i = 0, animals_1 = animals; _i < animals_1.length; _i++) {
     var animal = animals_1[_i];
     console.log("Enhanced For-Loop & UpperCase -> " + animal.toUpperCase() + ".");
@@ -41,13 +41,13 @@ var person = {
     age: 30
 };
 console.log("5. Object");
-console.log("Name is \"" + person.name + "\" and age is \"" + person.age + ".\"");
+console.log("Name is \"" + person.name + "\"\" and age is " + person.age + ".");
 console.log();
 //6. Tuple
 console.log("6. Tuple");
-var role = [1, 'Aye Chan Aung Thwin'];
+var role = [1, "Aye Chan Aung Thwin"];
 console.log("Tuple data [0] -> " + role[0] + ".");
-console.log("Tuple data [1] -> " + role[1] + ".");
+console.log("Tuple data [1] -> \"" + role[1] + ".\"");
 console.log();
 //7. Enum
 console.log("7. Enum (Human Readable Form)");
@@ -81,7 +81,7 @@ console.log("Data Type is " + typeof (data) + " and value is " + data + ".");
 data = 1.3;
 console.log("Data Type is " + typeof (data) + " and value is " + data + ".");
 data = "Aye Chan Aung Thwin";
-console.log("Data Type is " + typeof (data) + " and value is " + data + ".");
+console.log("Data Type is " + typeof (data) + " and value is \"" + data + ".\"");
 data = true;
 console.log("Data Type is " + typeof (data) + " and value is " + data + ".");
 data = [1, 2];
@@ -109,7 +109,12 @@ console.log("10. Tuple with Array");
 var roles = [[1, "HaHa"], [2, "HeHe"], [3, "HoHo"]];
 for (var i = 0; i < roles.length; i++) {
     for (var j = 0; j < roles[i].length; j++) { //Length of Turple is fixed. j<2
-        console.log("Simple For Loop & Tuple Array [" + i + "][" + j + "] -> " + roles[i][j]);
+        if (typeof (roles[i][j]) === 'string') {
+            console.log("Simple For Loop & Tuple Array [" + i + "][" + j + "] -> \"" + roles[i][j] + ".\"");
+        }
+        else {
+            console.log("Simple For Loop & Tuple Array [" + i + "][" + j + "] -> " + roles[i][j] + ".");
+        }
     }
 }
 console.log();
