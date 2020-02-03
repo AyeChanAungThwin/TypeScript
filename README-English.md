@@ -71,7 +71,7 @@ console.log('TypeScript is running!');
 
 4. Installing Development only dependency and Lite Server
 - `npm install --save-dev lite-server`
-   - (open package.json and inside "scripts" add `"tsc":"tsc", "start":"lite-server"`.
+   - (open package.json and inside "scripts" add `"tsc":"tsc"` to get TypeScript Compiler Functionality and `"start":"lite-server"` for server.
    - Add it just like the following code...
 ```
 "scripts": {
