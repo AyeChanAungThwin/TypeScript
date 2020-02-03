@@ -17,7 +17,7 @@
 - Its syntax is pretty familiar to those of OOP languages.
 - TypeScript includes many improvements over JavaScript.
 
-## Requirements (npm, ng, vscode)
+## Setting up the requirements (npm, ng, vscode)
 ###### Installing requirements in Arch Linux ######
 - Install nvm - Node Version Manager
 `$ yaourt -S nvm`
