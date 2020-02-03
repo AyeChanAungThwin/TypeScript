@@ -1,10 +1,21 @@
 # TypeScript
 ## Abstract
 > This is a typescript!
-> Typescript is very useful tool in front-end development for JavaEE Developers.
-> It provides compile-time checking.
-> It gives type safety and export javascript file.
-> It converts Java-like codes into javascript codes.
+> Typescript is a superset of JavaScript.
+> It allows static-typing and so it provides compile-time checking.
+> It is based on the .NET harmoy specification. So, a lot of code looks like and behaves similarly other OOP languages.
+
+## What's wrong with JavaScript?
+- JavaScript is not suitable for large applications. Structuring and maintaining a JavaScript application can be tricky as it grows. (Hard to maintain when larger!)
+- JavaScript Lacks strong typing. That means some errors will only pop-up at run-time.
+- JavaScript has got weird inheritance with unfamiliar syntax!
+- JavaScript also suffers from bad type coercion, etc...
+
+## Benefits of TypeScript
+- TypeScript compiles into JavaScript. You can run typescript everywhere; in the browser or in a node js.
+- Existing JavaScript code is already valid to TypeScript code. So, migrating to TypeScript is as simple as renaming your file.
+- Its syntax is pretty familiar to those of OOP languages.
+- TypeScript includes many improvements over JavaScript.
 
 ## Requirements (npm, ng, vscode)
 ###### Installing requirements in Arch Linux ######
