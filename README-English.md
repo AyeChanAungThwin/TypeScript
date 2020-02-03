@@ -23,8 +23,9 @@
 `$ yaourt -S nvm`
 - Load nvm
 `$ source /usr/share/nvm/init-nvm.sh`
-- Install node.js and npm
+- Install nodejs and npm
 `$ nvm -g install npm`
+   - (If above code failed, you can install nodejs from the main repository)
 - Test your setup
 ```
 $ nvm use stable
@@ -35,7 +36,7 @@ $ browser-sync start --server
    - Type`$ cd /usr/share/nvm/` in terminal.
    - Type`sudo gedit init-nvm.sh` in terminal and select all text and copy.
    - Type `sudo gedit .bashrc` in terminal and paste them in the end of the text.
-- Install nodejs
+- Install nodejs from the main repository
 `$ sudo pacman -S nodejs`
    - then you create a folder for your project and in a terminal you can install Angular
 ```
