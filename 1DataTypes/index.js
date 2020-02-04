@@ -118,3 +118,23 @@ for (var i = 0; i < roles.length; i++) {
     }
 }
 console.log();
+//11. User Defined Types
+console.log("--> 11. User Defined Types <--");
+function add(value1, value2) {
+    if (typeof (value1) === 'number' && typeof (value2) === 'number') {
+        var result = value1 + value2;
+        console.log("Number addition of " + value1 + " and " + value2 + " is " + result + ".");
+    }
+    else if (typeof (value1) === 'string' && typeof (value2) === 'string') {
+        var result = value1 + value2;
+        console.log("String addition of \"" + value1 + "\" and \"" + value2 + "\" is '" + result + ".\"");
+    }
+    else {
+        console.log("Both parameter types must be the same!");
+    }
+}
+add(1, 2);
+add("1", "2");
+add(1, "2");
+add("1", 2);
+console.log();
