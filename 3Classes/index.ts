@@ -1,6 +1,6 @@
 //Classes
 /*
-Method override is possible but method overload!
+Method override is possible but method overload in class!
 */
 console.log("--> Classes <--");
 console.log();
