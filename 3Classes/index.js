@@ -1,3 +1,4 @@
+//Classes
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -11,10 +12,6 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-//Classes
-/*
-Method override is possible but method overload in class!
-*/
 console.log("--> Classes <--");
 console.log();
 console.log("--> 1. Class Only <--");
