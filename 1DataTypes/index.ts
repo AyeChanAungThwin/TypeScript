@@ -166,8 +166,25 @@ add(1, "2");
 add("1", 2);
 console.log();
 
-//12. Unknown Type
-console.log("--> 12. Unknown Type <--")
+//12. User Defined Types
+console.log("--> 12. User Defined Types <--");
+type ConversionDescriptor = "as-text"|"as-number";
+function addNumberAs(a: number, b: number, c: ConversionDescriptor) {
+    if (c === 'as-text') {
+        const result = ""+a+b;
+        console.log(`Added Numbers ${a} and ${b} as 'text' is \"${result}.\"`);
+    }
+    else {
+        const result = a+b;
+        console.log(`Added Numbers ${a} and ${b} as 'number' is ${result}.`);
+    }
+}
+addNumberAs(1, 2, "as-text");
+addNumberAs(1, 2, "as-number");
+console.log();
+
+//13. Unknown Type
+console.log("--> 13. Unknown Type <--")
 let userInput: unknown;
 let userName: string;
 
