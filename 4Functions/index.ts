@@ -46,4 +46,17 @@ function addAndHandle(a: number, b: number, cb: (num: number) => void): void {
 }
 addAndHandle(10, 20, (result) => {
     console.log(`Addition is ${result}.`);
-})
+});
+console.log();
+
+console.log("--> 7. Function overloading <--");
+function addThis(a: string, b: string): string;
+function addThis(a: number, b: number): number;
+function addThis(a: any, b: any): any {
+    return a+b;
+}
+const output1 = addThis(1, 2);
+console.log(`Number addition is ${output1}.`);
+const output2 = addThis("abc", "def");
+console.log(`String addition is \"${output2}.\"`);
+console.log();

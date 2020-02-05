@@ -41,3 +41,13 @@ function addAndHandle(a, b, cb) {
 addAndHandle(10, 20, function (result) {
     console.log("Addition is " + result + ".");
 });
+console.log();
+console.log("--> 7. Function overloading <--");
+function addThis(a, b) {
+    return a + b;
+}
+var output1 = addThis(1, 2);
+console.log("Number addition is " + output1 + ".");
+var output2 = addThis("abc", "def");
+console.log("String addition is \"" + output2 + ".\"");
+console.log();
