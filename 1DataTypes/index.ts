@@ -142,8 +142,8 @@ for (let i=0; i<roles.length; i++) {
 }
 console.log();
 
-//11. Combined Types
-console.log("--> 11. Combined Types <--");
+//11. Union Types
+console.log("--> 11. Union Types <--");
 type Combinable = number | string;
 
 function add(value1: Combinable, value2: Combinable): void {

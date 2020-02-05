@@ -120,8 +120,8 @@ for (var i = 0; i < roles.length; i++) {
     }
 }
 console.log();
-//11. Combined Types
-console.log("--> 11. Combined Types <--");
+//11. Union Types
+console.log("--> 11. Union Types <--");
 function add(value1, value2) {
     if (typeof (value1) === 'number' && typeof (value2) === 'number') {
         var result = value1 + value2;
