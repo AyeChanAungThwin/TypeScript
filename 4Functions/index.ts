@@ -46,5 +46,4 @@ function addAndHandle(a: number, b: number, cb: (num: number) => void): void {
 }
 addAndHandle(10, 20, (result) => {
     console.log(`Addition is ${result}.`);
-});
-
+})
