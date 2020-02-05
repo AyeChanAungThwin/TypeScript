@@ -11,6 +11,8 @@ Array - Array<T>
 object - {name:"Aye Chan"}
 tuple - [T, T, T]
 any - *
+unknown - any let you pass any data types, let's say without compile time checking,
+but unknown is used when the data type should be checked.
 */
 
 //1. Number
@@ -140,8 +142,8 @@ for (let i=0; i<roles.length; i++) {
 }
 console.log();
 
-//11. User Defined Types
-console.log("--> 11. User Defined Types <--");
+//11. Combined Types
+console.log("--> 11. Combined Types <--");
 type Combinable = number | string;
 
 function add(value1: Combinable, value2: Combinable): void {
@@ -163,3 +165,15 @@ add("1", "2");
 add(1, "2");
 add("1", 2);
 console.log();
+
+//12. Unknown Type
+console.log("--> 12. Unknown Type <--")
+let userInput: unknown;
+let userName: string;
+
+userInput = 5;
+userInput = 'Max'
+if (typeof(userInput) === 'string') {
+    userName = userInput;
+    console.log(`Data type is 'string' and userName is \"${userName}.\"`);
+}
