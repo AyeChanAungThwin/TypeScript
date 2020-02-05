@@ -42,13 +42,16 @@ $ browser-sync start --server
 - And then you install typescript compiler using `$ npm install -g typescript`.
 
 ## Creating the project
-1. Create index.ts file
+1. Create your project folder
+- `mkdir MyFirstTypeScriptProject`
+
+2. Create index.ts file
 - `$ touch index.ts` and add the following code.
 ```
 console.log('TypeScript is running!');
 ```
 
-2. Create index.html file
+3. Create index.html file
 - `touch index.html`and link with `src="/index.js"`.
    - (index.js will be produced after compiling `index.ts`.)
 ```
@@ -65,13 +68,11 @@ console.log('TypeScript is running!');
 </html>
 ```
 
-3. Setting up new npm package. 
+4. Setting up new npm package. 
 - `npm init` can be used to set up a new or existing npm package.
    - Press enter for all steps.
-
-4. Installing Development only dependency and Lite Server
-- `npm install --save-dev lite-server`
-   - (open package.json and inside "scripts" add `"tsc":"tsc"` to get TypeScript Compiler Functionality and `"start":"lite-server"` for server.
+   - `package.json` will be appear.
+   - (open `package.json` and inside `"scripts"` add `"tsc":"tsc"` to get TypeScript Compiler Functionality and `"start":"lite-server"` for server.
    - Add it just like the following code...
 ```
 "scripts": {
@@ -81,13 +82,17 @@ console.log('TypeScript is running!');
 },
 ```
 
-5. Compiling TypeScript file
+5. Installing Development only dependency and Lite Server
+- `npm install --save-dev lite-server`
+   - `package-lock.json` and Folder named `node_modules` are created in which all dependency required to run this project lines there.
+
+6. Compiling TypeScript file
 - `tsc index.ts` compiles and produces index.js file.
 
-6. Start the Lite Server
+7. Start the Lite Server
 - `npm start` will run index.html on lite-server with the specified path
 
-7. Check Console
+8. Check Console
 - Right Click on browser and press `Inspect Element(Q)`
 - Press on Console and you'll see the output.
 
