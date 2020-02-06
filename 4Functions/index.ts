@@ -64,3 +64,32 @@ console.log();
 console.log("--> 8. Arrow function <-- ");
 const multiply = (a: number, b: number): number => a*b;
 console.log(`Multiplying two values is ${multiply(2, 3)}.`);
+console.log();
+
+console.log("--> 9. Disadvantage of using function <--");
+class Greeter{
+    private name = "Aye Chan Aung Thwin";
+
+    sayHello() {
+        setTimeout(function(){
+            console.log(`Hello, ${this.name}!`); //name points to window object!!
+        }, 500);
+    }
+}
+const greeter = new Greeter();
+greeter.sayHello();
+console.log();
+
+console.log("--> 10. Advanage of using arrow function <--");
+class Greeter2{
+    private name = "Aye Chan Aung Thwin";
+
+    sayHello() {
+        setTimeout(()=>{
+            console.log(`Hello, ${this.name}!`); //name points to window object!!
+        }, 500);
+    }
+}
+const greeter2 = new Greeter2();
+greeter2.sayHello();
+console.log();

@@ -54,3 +54,35 @@ console.log();
 console.log("--> 8. Arrow function <-- ");
 var multiply = function (a, b) { return a * b; };
 console.log("Multiplying two values is " + multiply(2, 3) + ".");
+console.log();
+console.log("--> 9. Disadvantage of using function <--");
+var Greeter = /** @class */ (function () {
+    function Greeter() {
+        this.name = "Aye Chan Aung Thwin";
+    }
+    Greeter.prototype.sayHello = function () {
+        setTimeout(function () {
+            console.log("Hello, " + this.name + "!"); //name points to window object!!
+        }, 500);
+    };
+    return Greeter;
+}());
+var greeter = new Greeter();
+greeter.sayHello();
+console.log();
+console.log("--> 10. Advanage of using arrow function <--");
+var Greeter2 = /** @class */ (function () {
+    function Greeter2() {
+        this.name = "Aye Chan Aung Thwin";
+    }
+    Greeter2.prototype.sayHello = function () {
+        var _this = this;
+        setTimeout(function () {
+            console.log("Hello, " + _this.name + "!"); //name points to window object!!
+        }, 500);
+    };
+    return Greeter2;
+}());
+var greeter2 = new Greeter2();
+greeter2.sayHello();
+console.log();
