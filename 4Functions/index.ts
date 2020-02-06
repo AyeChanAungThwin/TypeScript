@@ -60,3 +60,7 @@ console.log(`Number addition is ${output1}.`);
 const output2 = addThis("abc", "def");
 console.log(`String addition is \"${output2}.\"`);
 console.log();
+
+console.log("--> 8. Arrow function <-- ");
+const multiply = (a: number, b: number): number => a*b;
+console.log(`Multiplying two values is ${multiply(2, 3)}.`);

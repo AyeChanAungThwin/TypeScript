@@ -51,3 +51,6 @@ console.log("Number addition is " + output1 + ".");
 var output2 = addThis("abc", "def");
 console.log("String addition is \"" + output2 + ".\"");
 console.log();
+console.log("--> 8. Arrow function <-- ");
+var multiply = function (a, b) { return a * b; };
+console.log("Multiplying two values is " + multiply(2, 3) + ".");
